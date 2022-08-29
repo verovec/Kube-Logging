@@ -1,0 +1,16 @@
+name: kube-logging
+
+apiVersion: v1
+type: application
+version: 2022.06.25
+
+
+description: logging bundle
+home: https://github.com/verovec/Kube-Logging
+
+
+maintainers:
+- email: verove_c@etna-alternance.net
+  name: Clement
+- email: berwic_f@etna-alternance.net
+  name: Flavien

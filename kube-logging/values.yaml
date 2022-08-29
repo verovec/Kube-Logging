@@ -1,0 +1,13 @@
+fullnameOverride: kube-logging
+
+
+kibana:
+  host: ""
+
+elasticsearch:
+  nodeHostname: ""
+
+  replicas: 1
+
+  storage:
+    size: 2Gi

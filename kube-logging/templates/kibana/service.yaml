@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: kibana
+  namespace: {{ .Release.Namespace }}
+  labels:
+    app: kibana-svc
+spec:
+  selector:
+    app: kibana
+  type: ClusterIP
+  selector:
+    app: kibana
+  ports:
+    - port: 5601
