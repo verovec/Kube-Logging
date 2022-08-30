@@ -1,0 +1,19 @@
+fullnameOverride: kube-logging
+
+
+kibana:
+  ingress:
+    enabled: false
+    host: ""
+    ingressClassName: ""
+
+elasticsearch:
+  storage:
+    size: 2Gi
+    storageClassName: ""
+  
+  resources:
+    limits:
+      memory: 1Gi
+    requests:
+      memory: 1Gi

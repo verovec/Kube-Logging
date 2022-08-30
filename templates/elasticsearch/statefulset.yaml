@@ -19,9 +19,9 @@ spec:
         image: docker.elastic.co/elasticsearch/elasticsearch:7.17.5
         resources:
           limits:
-            memory: 1Gi
+            memory: {{ .Values.elasticsearch.resources.limits.memory }}
           requests:
-            memory: 1Gi
+            memory: {{ .Values.elasticsearch.resources.requests.memory }}
         ports:
         - containerPort: 9200
           name: rest
@@ -70,8 +70,8 @@ spec:
       labels:
         app: elasticsearch
     spec:
-      storageClassName: openebs-hostpath
+      storageClassName: {{ .Values.elasticsearch.storage.storageClassName }}
       accessModes: [ "ReadWriteOnce" ]
       resources:
         requests:
-          storage: 10Gi
+          storage: {{ .Values.elasticsearch.storage.size }}
