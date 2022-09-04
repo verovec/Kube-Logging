@@ -9,11 +9,13 @@ kibana:
 
 elasticsearch:
   storage:
-    size: 2Gi
+    size: 8Gi
     storageClassName: ""
   
   resources:
     limits:
-      memory: 1Gi
+      memory: 2Gi
+      cpu: 1000m
     requests:
       memory: 1Gi
+      cpu: 500m
