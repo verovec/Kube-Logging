@@ -22,7 +22,7 @@ spec:
             memory: {{ .Values.elasticsearch.resources.limits.memory }}
             cpu: {{ .Values.elasticsearch.resources.limits.cpu }}
           requests:
-            memory: {{ .Values.elasticsearch.resources.requests.memory }}*
+            memory: {{ .Values.elasticsearch.resources.requests.memory }}
             cpu: {{ .Values.elasticsearch.resources.requests.cpu }}
         ports:
         - containerPort: 9200

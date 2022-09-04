@@ -11,7 +11,7 @@ elasticsearch:
   storage:
     size: 8Gi
     storageClassName: ""
-  
+
   resources:
     limits:
       memory: 2Gi

@@ -5,9 +5,9 @@ metadata:
   name: kibana-ingress
   namespace: {{ .Release.Namespace }}
 spec:
-  ingressClassName: {{ .Values.kibana.ingressClassName }}
+  ingressClassName: {{ .Values.kibana.ingress.ingressClassName }}
   rules:
-  - host: {{ .Values.kibana.host }}
+  - host: {{ .Values.kibana.ingress.host }}
     http:
       paths:
       - path: /

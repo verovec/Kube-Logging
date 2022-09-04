@@ -1,8 +1,8 @@
 ![](https://img.shields.io/badge/Kubernetes%20>=-1.22.7-blue)
 ![](https://img.shields.io/badge/Helm-3-9cf)
-![](https://img.shields.io/badge/Elastic%20Search-7.17.5-yellow)
+![](https://img.shields.io/badge/Elastic%20Search-7.2.0-yellow)
 ![](https://img.shields.io/badge/Fluentd-1.4.2-%2366A5CE)
-![](https://img.shields.io/badge/Kibana-7.17.5-%23E44A91)
+![](https://img.shields.io/badge/Kibana-7.2.0-%23E44A91)
 
 # Kube-Logging
 Logger Helm chart for Kubernetes cluster working with Elastic Search - Fluentd - Kibana.
